@@ -4,7 +4,8 @@
 
 #include <iostream>
 using namespace std;
-#include <vector>
+// 벡터보단 #include <vector> <-- 시간이 오래걸림
+#include <algorithm> // reverse를 쓰기 위해
 
 int main(){
     ios::sync_with_stdio(0);
@@ -18,9 +19,13 @@ int main(){
         string S;
         cin >> S;
 
-        vector<char> v1;
-        vector<char> v2;
+        string rev = S;
+        reverse(rev.begin(), rev.end());
+        
+        // vector<char> v1;
+        // vector<char> v2;
 
+        /* 
         for(char c : S){
             v1.push_back(c);
         }
@@ -28,9 +33,10 @@ int main(){
         // 거꾸로 확인하는 부분을 헤맸네연
         for(int i = S.size() - 1; i >= 0; i-- ){
             v2.push_back(S[i]);
-        }
+        } 
+        */
 
-        if(v1 == v2)
+        if(S == rev) // 이렇게 비교해주면 끝
             cout << "#" << i << " " << 1 << "\n";
         else
             cout << "#" << i << " " << 0 << "\n";
