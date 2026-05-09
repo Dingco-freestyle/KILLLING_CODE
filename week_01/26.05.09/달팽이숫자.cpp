@@ -46,7 +46,7 @@ int main(){
         cout << "#" << i << "\n";
         for(int i = 0; i < N; i++){
             for(int j = 0; j < N; j++){
-                cout << arr[i][j] << " ";
+                cout << arr[i][j] << " "; // <-- 요 공백 참 찾기 힘드네잉
             }
         cout << "\n";
         }
