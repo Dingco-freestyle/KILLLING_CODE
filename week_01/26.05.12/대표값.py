@@ -1,10 +1,12 @@
 import sys
-# sys.stdin = open("input.txt", "rt")
+#sys.stdin = open("input.txt", "rt")
 
 N = int(input())
 a = list(map(int, input().split()))
 
-ave = round(sum(a) / N)  # round : 소수 첫째자리에서 반올림
+ave = round((sum(a) / N)+0.5)
+# round = round_half_even : 짝수쪽으로 반올림 ex)4.5 -> 4
+# 해결방안 : 0.5를 더해서 반올림
 min = 2147000000
 
 
