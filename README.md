@@ -101,7 +101,7 @@ git pull origin main
 
 ```bash
 # 브랜치 생성 + 이동을 동시에
-git checkout -b woojin/week_01/두수의합
+git checkout -b woojin/week_02/두수의합
 ```
 
 ---
@@ -114,8 +114,8 @@ git checkout -b woojin/week_01/두수의합
 예: `두수의합_woojin.py`
 
 ```bash
-# week_01 폴더에 파일 저장 후
-git add week_01/두수의합_woojin.py
+# week_02 폴더에 파일 저장 후
+git add week_02/두수의합_woojin.py
 git commit -m "week01 - 두수의합"
 ```
 
@@ -126,7 +126,7 @@ git commit -m "week01 - 두수의합"
 내 브랜치를 GitHub에 업로드합니다. **23:59 전까지** 완료해야 합니다.
 
 ```bash
-git push origin woojin/week_01/두수의합
+git push origin woojin/week_02/두수의합
 ```
 
 ---
@@ -157,7 +157,7 @@ Merge 후에는 작업한 브랜치를 삭제합니다.
 # Merge 후 로컬에서 브랜치 정리
 git checkout main
 git pull origin main
-git branch -d woojin/week_01/두수의합
+git branch -d woojin/week_02/두수의합
 ```
 
 ---
