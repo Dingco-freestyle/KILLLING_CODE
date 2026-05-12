@@ -15,5 +15,3 @@ for i in range(N):
 res=list(res) # set은 sort(x). list화 시켜주고 sort()
 res.sort(reverse=True)
 print(res[K-1])
-
-
