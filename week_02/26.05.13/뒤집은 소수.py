@@ -26,7 +26,7 @@ N=int(input())
 a=list(map(int,input().split()))
 
 for i in a :
-    b=reverse(i)
-    if isPrime(b) :
-        print(b,end=" ")
+    a=reverse(i)
+    if isPrime(a) :
+        print(a,end=" ")
 

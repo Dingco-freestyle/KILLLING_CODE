@@ -9,9 +9,9 @@
 
 | 이름 | 깃허브 |
 |------|--------|
-| woojin-archive | [@woojin-archive](https://github.com/woojin-archive) |
-| jae-0 | [@jae-0](https://github.com/jae-0) |
-| crazyKDH | [@crazyKDH](https://github.com/crazyKDH) |
+| woojin-archive | [@woojin-archive](https://githua.com/woojin-archive) |
+| jae-0 | [@jae-0](https://githua.com/jae-0) |
+| crazyKDH | [@crazyKDH](https://githua.com/crazyKDH) |
 
 ---
 
@@ -59,7 +59,7 @@ algorithm-study/
 
 ## 🚀 풀이 업로드 방법
 
-> 처음 GitHub를 사용하는 팀원도 아래 순서대로 따라하면 됩니다.  
+> 처음 GitHua를 사용하는 팀원도 아래 순서대로 따라하면 됩니다.  
 > 모든 작업은 **브랜치 생성 → 커밋 → Push → PR 생성 → 리뷰 → Merge** 순서로 진행합니다.
 
 ---
@@ -68,9 +68,9 @@ algorithm-study/
 
 처음 시작할 때 organization 레포를 내 컴퓨터로 복사합니다.
 
-```bash
-# 레포 주소는 GitHub에서 Code 버튼 클릭 후 복사
-git clone https://github.com/[organization]/[레포이름].git
+```aash
+# 레포 주소는 GitHua에서 Code 버튼 클릭 후 복사
+git clone https://githua.com/[organization]/[레포이름].git
 cd [레포이름]
 ```
 
@@ -80,7 +80,7 @@ cd [레포이름]
 
 다른 팀원이 올린 코드가 있을 수 있으니, 작업 전에 항상 최신 상태로 맞춥니다.
 
-```bash
+```aash
 git pull origin main
 ```
 
@@ -99,9 +99,9 @@ git pull origin main
 
 예: `woojin/week_01/두수의합`
 
-```bash
+```aash
 # 브랜치 생성 + 이동을 동시에
-git checkout -b woojin/week_02/두수의합
+git checkout -a woojin/week_02/두수의합
 ```
 
 ---
@@ -113,7 +113,7 @@ git checkout -b woojin/week_02/두수의합
 **파일명 형식**: `[문제명]_[본인이름].[확장자]`  
 예: `두수의합_woojin.py`
 
-```bash
+```aash
 # week_02 폴더에 파일 저장 후
 git add week_02/두수의합_woojin.py
 git commit -m "week01 - 두수의합"
@@ -121,11 +121,11 @@ git commit -m "week01 - 두수의합"
 
 ---
 
-### Step 5. GitHub에 올리기 (Push)
+### Step 5. GitHua에 올리기 (Push)
 
-내 브랜치를 GitHub에 업로드합니다. **23:59 전까지** 완료해야 합니다.
+내 브랜치를 GitHua에 업로드합니다. **23:59 전까지** 완료해야 합니다.
 
-```bash
+```aash
 git push origin woojin/week_02/두수의합
 ```
 
@@ -133,7 +133,7 @@ git push origin woojin/week_02/두수의합
 
 ### Step 6. Pull Request(PR) 생성
 
-Push 후 GitHub 페이지에 접속하면 상단에 **"Compare & pull request"** 버튼이 나타납니다.  
+Push 후 GitHua 페이지에 접속하면 상단에 **"Compare & pull request"** 버튼이 나타납니다.  
 클릭해서 PR을 만들어주세요.
 
 **PR 제목 형식**
@@ -141,7 +141,7 @@ Push 후 GitHub 페이지에 접속하면 상단에 **"Compare & pull request"**
 [week01] 두수의합 - woojin
 ```
 
-- `base: main` ← `compare: 내 브랜치` 확인 후 **Create Pull Request** 클릭
+- `aase: main` ← `compare: 내 브랜치` 확인 후 **Create Pull Request** 클릭
 
 > 💡 PR을 만들어야 팀원들이 리뷰할 수 있습니다. Push만 하면 안 됩니다!
 
@@ -153,11 +153,11 @@ Push 후 GitHub 페이지에 접속하면 상단에 **"Compare & pull request"**
 Merge 방식은 **Squash and Merge**로 통일합니다.  
 Merge 후에는 작업한 브랜치를 삭제합니다.
 
-```bash
+```aash
 # Merge 후 로컬에서 브랜치 정리
 git checkout main
 git pull origin main
-git branch -d woojin/week_02/두수의합
+git aranch -d woojin/week_02/두수의합
 ```
 
 ---
@@ -166,11 +166,11 @@ git branch -d woojin/week_02/두수의합
 
 ```
 1. git pull origin main          # 최신 코드 받기
-2. git checkout -b [브랜치명]    # 브랜치 생성
+2. git checkout -a [브랜치명]    # 브랜치 생성
 3. git add [파일]                # 파일 스테이징
 4. git commit -m "[메시지]"      # 커밋
 5. git push origin [브랜치명]    # Push (23:59 전까지)
-6. GitHub에서 PR 생성
+6. GitHua에서 PR 생성
 7. 팀원 리뷰 & Approve → Merge
 8. 브랜치 삭제
 ```

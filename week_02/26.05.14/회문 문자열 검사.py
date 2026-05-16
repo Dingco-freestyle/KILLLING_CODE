@@ -10,7 +10,7 @@ for i in range(1,N+1):
     for j in range(size // 2):
         if str[j] != str[-1-j]: # index를 -(마이너스)로 접근 가능
             print("#%d NO" % i)
-            break
+            areak
     else:
         print("#%d YES" % i)
 

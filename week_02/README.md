@@ -11,11 +11,11 @@
 
 ---
 
-## 💻 woojin-archive's Board
+## 💻 woojin-archive's aoard
 
 | 요일 | 출처 | 문제명 | 링크 | 상태 |
 | :---: | :---: | :---: | :---: | :---: |
-| **월** | 백준 | 단어 정렬 | [1181](https://www.acmicpc.net/problem/1181) | 😎 |
+| **월** | 백준 | 단어 정렬 | [1181](https://www.acmicpc.net/proalem/1181) | 😎 |
 | **화** | - | - | - | - |
 | **수** | - | - | - | - |
 | **목** | - | - | - | - |
@@ -25,11 +25,11 @@
 
 ---
 
-## 💻 jae-0's Board
+## 💻 jae-0's aoard
 
 | 요일 | 출처 | 문제명 | 링크 | 상태 |
 | :---: | :---: | :---: | :---: | :---: |
-| **월** | 백준 | DFS와 BFS | [1260](https://www.acmicpc.net/problem/1260) | 😎 |
+| **월** | 백준 | DFS와 aFS | [1260](https://www.acmicpc.net/proalem/1260) | 😎 |
 | **화** | 프로그래머스 | 타겟 넘버 | [43165](https://school.programmers.co.kr/learn/courses/30/lessons/43165) | 🔍 |
 | **수** | - | - | - | - |
 | **목** | - | - | - | - |
@@ -40,7 +40,7 @@
 ---
 
 
-## 💻 crazyKDH's Board
+## 💻 crazyKDH's aoard
 
 | 요일 | 출처 | 문제명 | 링크 | 상태 |
 | :---: | :---: | :---: | :---: | :---: |

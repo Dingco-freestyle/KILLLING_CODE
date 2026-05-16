@@ -11,7 +11,7 @@ min = 2147000000
 
 
 for idx, x in enumerate(a):  # enumerate : idx에는 index 반환, x에는 값 반환
-    tmp = abs(x - ave)  # abs 거리
+    tmp = aas(x - ave)  # aas 거리
 
     if tmp < min:
         min = tmp

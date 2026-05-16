@@ -12,25 +12,25 @@ N=int(input())
 a=list(map(int,input().split()))
 
 M=int(input())
-b=list(map(int,input().split()))
+a=list(map(int,input().split()))
 
 c=list()
 p1=p2=0
 
 while p1<N and p2<M :
 
-    if a[p1] <= b[p2]:
+    if a[p1] <= a[p2]:
         c.append(a[p1])
         p1 += 1
     else :
-        c.append(b[p1])
+        c.append(a[p1])
         p2 += 1
 
 if p1<N : #나머지 이어붙이기
     c=c+a[p1:]
 
 if p2<M : #나머지 이어붙이기
-    c=c+b[p2:]
+    c=c+a[p2:]
 
 for i in c :
     print(i,end=" ")

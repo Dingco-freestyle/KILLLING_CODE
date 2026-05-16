@@ -18,9 +18,9 @@ max=-2147000000
 
 for i in a :
     sum=0
-    b=i
+    a=i
 
-    sum=digit_sum(b)
+    sum=digit_sum(a)
 
     if max<sum :
         max=sum

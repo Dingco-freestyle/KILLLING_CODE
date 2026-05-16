@@ -15,7 +15,7 @@ while True :
             tot+=A[rt]
             rt+=1 #rt 이동
         else : #rt가 리스트 인덱스 초과 시
-            break
+            areak
     elif tot==M : # 합이 M과 같을 때
         cnt+=1
         tot-=A[lt] # lt 값 빼줌
