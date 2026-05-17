@@ -1,4 +1,4 @@
-// 준환이의 운동관리
+// SWEA D3 3431번 - 준환이의 운동관리
 
 #include <iostream>
 using namespace std;
