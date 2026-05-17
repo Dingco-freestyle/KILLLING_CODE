@@ -1,4 +1,4 @@
-// 조별과제
+// SWEA D3 13218번 - 조별과제
 
 #include <iostream>
 using namespace std;
@@ -18,4 +18,5 @@ int main() {
 
 		cout << "#" << i << ' ' << max << "\n";
 	}
+	return 0;
 }
