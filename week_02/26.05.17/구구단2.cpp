@@ -1,4 +1,4 @@
-// 구구단2
+// SWEA D3 12221번 - 구구단2
 
 #include <iostream>
 using namespace std;
