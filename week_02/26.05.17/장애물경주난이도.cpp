@@ -1,4 +1,4 @@
-// 장애물 경주 난이도
+// SWEA D3 6730번 - 장애물 경주 난이도
 
 #include <iostream>
 using namespace std;
