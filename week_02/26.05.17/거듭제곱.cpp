@@ -5,8 +5,6 @@
 #include <iostream>
 using namespace std;
 
-
-
 int func1(int a, int b) {
 	// a는 곱하는 수, b는 횟수
 	if (b == 0)
