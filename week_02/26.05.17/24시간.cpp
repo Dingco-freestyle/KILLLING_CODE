@@ -1,4 +1,4 @@
-// 24시간이 모자라
+// SWEA D3 12368번 - 24시간
 
 #include <iostream>
 using namespace std;
