@@ -37,3 +37,13 @@ int main(){
     }
     return 0;
 }
+
+/*
+더 효율적인 회문 검사
+for(int i = 0; i < S.size() / 2; i++){
+    if(S[i] != S[S.size() - 1 - i]){
+        flag = false;
+        break;
+    }
+}
+*/
