@@ -26,9 +26,13 @@ int main(){
         }
 
         // (핵심) 내가 구현하지 못한 부분
+
+        // M*M 시작~끝 위치를 정하는 반복문 2개
         for(int i = 0; i <= N - M; i++){
             for(int j = 0; j <= N - M; j++){
                 int sum = 0;
+
+                // M*M 영역 내부를 도는 반복문 2개
                 for(int k = i; k < i + M; k++){
                     for(int l = j; l < j+ M; l++){
                         sum += arr[k][l];
