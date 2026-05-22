@@ -27,6 +27,7 @@ int main(){
             v2.push_back(p2);
         }
 
+        // 항상 작은 쪽을 움직이기 위한 swap
         if(N > M){
             swap(v1, v2);
             swap(N, M);
