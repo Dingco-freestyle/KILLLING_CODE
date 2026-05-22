@@ -16,6 +16,16 @@ int main() {
 
 		int hour = 0; // 0 ~ 23까지만
 
+		// 효율적인 풀이
+		hour = (A + B) % 24;
+
+		cout << "#" << i << ' ' << hour << "\n";
+	}
+	return 0;
+}
+
+/*
+		내 풀이
 		hour += A;
 		
 		while (B > 0) {
@@ -28,7 +38,4 @@ int main() {
 			}
 		}
 		hour += B;
-		cout << "#" << i << ' ' << hour << "\n";
-	}
-	return 0;
-}
+		*/
