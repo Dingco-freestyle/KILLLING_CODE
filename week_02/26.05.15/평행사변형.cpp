@@ -1,3 +1,5 @@
+// SWEA D3 15941번 - 평행사변형
+
 #include <iostream>
 using namespace std;
 
