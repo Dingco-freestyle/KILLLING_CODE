@@ -11,7 +11,7 @@ meeting=[]
 
 for i in range(n) :
     s,e=map(int,input().split())
-    meeting.append([s,e]) # 튜플형태로 저장
+    meeting.append((s,e)) # 튜플형태로 저장
 
 meeting.sort(key=lambda x: (x[1],x[0])) #정렬 순위를 끝나는시간으로 설정
 
