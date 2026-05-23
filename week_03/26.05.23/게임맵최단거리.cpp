@@ -8,7 +8,7 @@ int board[502][502];
 bool vis[502][502];
 int n, m;
 int dx[4] = { 1, 0, -1, 0 };
-int dy[4] = { 0, 1, -1, 0 };
+int dy[4] = { 0, 1, 0, -1};
 
 int main() {
 	ios::sync_with_stdio(0);
