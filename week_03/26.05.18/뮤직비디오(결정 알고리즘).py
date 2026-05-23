@@ -15,6 +15,7 @@ def Count(capacity) :
 
 N,M=map(int,input().split())
 Music=list(map(int,input().split()))
+maxx=max(Music)
 
 lt=1
 rt=sum(Music) # 최대 용량
@@ -24,7 +25,7 @@ sum=0
 while lt<=rt :
     mid=(lt+rt)//2 # 용량 초기화 (최소 용량 찾기 위해)
 
-    if Count(mid)<=M :
+    if mid>=maxx and Count(mid)<=M :
         res=mid # 일단 정답
         rt=mid-1 # 더 좋은값(최소 용량) 찾기 위해
     else :
