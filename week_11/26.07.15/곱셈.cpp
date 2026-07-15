@@ -5,7 +5,7 @@ long long ans = 1;
 long long C;
 
 // 재귀함수 이용해서 중복되는 부분 없애기
-// 모듈러는 (A * B) % C = A % C * B % C
+// 모듈러는 (A * B) % C = (A % C * B % C) % C
 long long func(long long A, long long B){
   if(B == 1) return A % C;
   
