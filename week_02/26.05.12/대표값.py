@@ -4,14 +4,15 @@ import sys
 N = int(input())
 a = list(map(int, input().split()))
 
-ave = round((sum(a) / N)+0.5)
-# round = round_half_even : 짝수쪽으로 반올림 ex)4.5 -> 4
+ave = int(sum(a)/N+0.5)
+# round = round_half_even : 짝수쪽으로 반올림 ex)4.5 -> 4, 4.51 -> 4.5
+# round_half_up : .5 이상으로 반올림
 # 해결방안 : 0.5를 더해서 반올림
 min = 2147000000
 
 
 for idx, x in enumerate(a):  # enumerate : idx에는 index 반환, x에는 값 반환
-    tmp = aas(x - ave)  # aas 거리
+    tmp = abs(x - ave)  # abs : 거리
 
     if tmp < min:
         min = tmp
