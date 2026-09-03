@@ -1,0 +1,98 @@
+#include <iostream>
+using namespace std;
+
+int N;
+int cnt;
+
+int visited[10];
+int weight[10];
+
+int fact[10];
+int power2[10];
+
+void dfs(int level, int left, int right, int total) {
+
+	// 모든 추를 사용한 경우
+	if (level == N) {
+		cnt++;
+		return;
+	}
+
+	// 아직 사용하지 않은 추들의 총 무게
+	int remain = total - left - right;
+
+	// ★ 가지치기
+	// 남은 추를 전부 오른쪽에 놓아도
+	// 왼쪽이 오른쪽보다 크거나 같다면
+	// 앞으로는 모든 배치가 가능하다.
+	if (left >= right + remain) {
+
+		int remainCount = N - level;
+		cnt += fact[remainCount] * power2[remainCount];
+
+		return;
+	}
+
+	for (int i = 0; i < N; i++) {
+
+		if (visited[i])
+			continue;
+
+		visited[i] = 1;
+
+		dfs(level + 1, left + weight[i], right, total);
+
+		if (left >= right + weight[i]) 
+			dfs(level + 1, left, right + weight[i], total);
+		
+		// 백트래킹
+		visited[i] = 0;
+	}
+}
+
+int main() {
+
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
+	// 팩토리얼 미리 계산
+	fact[0] = 1;
+
+	for (int i = 1; i <= 9; i++) {
+		fact[i] = fact[i - 1] * i;
+	}
+
+	// 2의 거듭제곱 미리 계산
+	power2[0] = 1;
+
+	for (int i = 1; i <= 9; i++) {
+		power2[i] = power2[i - 1] * 2;
+	}
+
+	int T;
+	cin >> T;
+
+	for (int tc = 1; tc <= T; tc++) {
+
+		cin >> N;
+
+		cnt = 0;
+
+		for (int i = 0; i < N; i++) {
+			cin >> weight[i];
+		}
+
+		// 전체 추의 무게
+		int total = 0;
+
+		for (int i = 0; i < N; i++) {
+			total += weight[i];
+		}
+
+		dfs(0, 0, 0, total);
+
+		cout << "#" << tc << " " << cnt << "\n";
+	}
+
+	return 0;
+}
