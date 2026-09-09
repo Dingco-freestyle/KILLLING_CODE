@@ -13,7 +13,6 @@ struct Point {
 	int y, x;
 };
 
-
 void BFS(Point st) {
 	queue<Point> Q;
 	visited[st.y][st.x] = 1;
@@ -29,13 +28,15 @@ void BFS(Point st) {
 
 			Point np = { cur.y + dy[i], cur.x + dx[i] };
 
-			if (np.y < 0 || np.y >= 5 ||
-				np.x < 0 || np.x >= 5)
+			// 맵 범위 check
+			if (np.y < 0 || np.y >= 5 || np.x < 0 || np.x >= 5)
 				continue;
 
+			// 벽 check
 			if (arr[np.y][np.x] == -1)
 				continue;
 
+			// 방문한 곳 check
 			if (visited[np.y][np.x] == 1)
 				continue;
 
