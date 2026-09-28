@@ -1,6 +1,7 @@
 import sys
 #sys.stdin = open("input.txt", "rt")
 
+# abs,enumerate,round
 N = int(input())
 a = list(map(int, input().split()))
 
