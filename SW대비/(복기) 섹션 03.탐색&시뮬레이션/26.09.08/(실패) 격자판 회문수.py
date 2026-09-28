@@ -4,6 +4,7 @@ import sys
 # 원인1. 행은 슬라이싱 사용
 # 원인2. 열 탐색하는 방법 익히기
 
+#260928 성공
 if __name__=="__main__" :
     board=[list(map(int,input().split())) for _ in range(7)]
     cnt=0

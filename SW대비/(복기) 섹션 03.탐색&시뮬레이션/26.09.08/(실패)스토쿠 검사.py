@@ -4,6 +4,7 @@ import sys
 # 원인 1. 최상위 함수나 if __name__=="__main__": 에선 return 못씀
 #         def check() 함수 사용해서 문제풀이
 
+# 260928 성공
 def check(a) :
     # 행,열 검사
     for i in range(9) :
