@@ -27,3 +27,6 @@ if __name__=="__main__" :
        n=float(input())
        m=binary_change(n)
        print("#%d %s" %(i+1,m))
+
+# 열심히 하세연~.~
+# from. 김싸피가
