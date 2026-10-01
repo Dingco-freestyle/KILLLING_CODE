@@ -16,9 +16,9 @@ for i in range(len(a)) :
     else :
         stack.pop()
 
-        if a[i-1]=="(" :
+        if a[i-1]=="(" : #레이저
             cnt+=len(stack)
-        else :
+        else : # 선닫힘
             cnt+=1
 
 print(cnt)

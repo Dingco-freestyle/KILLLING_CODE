@@ -7,6 +7,8 @@ import sys
 # - 나중에 원래 인덱스가 필요할 수도 있음	lt, rt
 # - 큐 형태로 계속 넣었다 뺐다 반복 (BFS 등)	deque
 
+# 260930 실패
+
 if __name__ == "__main__" :
     n=int(input())
     a=list(map(int,input().split()))
@@ -21,6 +23,7 @@ if __name__ == "__main__" :
         if a[rt]>last :
             tmp.append((a[rt],"R"))
         tmp.sort()
+
         if len(tmp)==0 :
             break
         else :

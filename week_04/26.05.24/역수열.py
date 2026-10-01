@@ -15,7 +15,7 @@ for i in range(n) :
             seq[j]=i+1
             break
 
-        elif seq[j]==0 :
+        elif seq[j]==0 : #
             a[i]-=1
 
 for x in seq :

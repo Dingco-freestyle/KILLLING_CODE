@@ -4,6 +4,7 @@ import sys
 # 그리디 문제는 대부분 정렬과 동반
 # 원인1. 끝나는 시간순으로 정렬하는법 :
 # meeting.sort(key=lambda x : (x[1],x[0]))
+# 260930 실패
 
 if __name__ == "__main__" :
     n=int(input())
