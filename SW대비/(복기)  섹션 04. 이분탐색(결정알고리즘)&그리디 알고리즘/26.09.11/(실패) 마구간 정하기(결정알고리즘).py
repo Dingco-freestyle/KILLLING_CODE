@@ -3,6 +3,7 @@ import sys
 
 # 원인 1. 이분탐색 : 최적의 답을 향해 찾아 나가기
 
+# 260930 실패
 
 def Count(len) :
     ep=x[0]

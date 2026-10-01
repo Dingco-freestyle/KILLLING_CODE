@@ -3,6 +3,8 @@ import sys
 # 이분 검색 (lt, rt, mid)
 # mid=(lt+rt)//2
 # 원하는 값을 찾을때 사용가능
+
+# 260929 실패
 def Count(len) :
     cnt=0
     for i in a :

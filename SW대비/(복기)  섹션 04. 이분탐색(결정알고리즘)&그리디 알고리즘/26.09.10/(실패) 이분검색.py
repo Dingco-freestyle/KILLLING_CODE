@@ -3,6 +3,8 @@ sys.stdin=open("input.txt","rt")
 # 이분 검색 (lt, rt, mid)
 # mid=(lt+rt)//2
 # 정렬되있는 상황에서 사용
+
+# 260929 성공
 if __name__ =="__main__" :
     n,m=map(int,input().split())
     a=list(map(int,input().split()))
